@@ -1,0 +1,28 @@
+{
+	"apiVersion": 2,
+	"name": "myplugin/wrapper-block",
+	"title": "シンプルラッパー",
+	"category": "layout",
+	"icon": "editor-table",
+	"description": "タグとid名とクラス名、spacingを選べる汎用ラッパーブロック。",
+	"attributes": {
+		"tagName": {
+			"type": "string",
+			"default": "div"
+		},
+		"customClass": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"spacing": {
+			"padding": true,
+			"margin": true
+		},
+		"className": false,
+		"innerBlocks": true
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./style-index.css"
+}
